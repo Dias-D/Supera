@@ -45,5 +45,5 @@ DB_PASSWORD=password
     > yarn dev
 
 **Pronto**
-Seu backend está pronto para ser utilizado
+Seu sistema está pronto para ser utilizado
 Dentro da pasta .docs possui uma Postman Collection para analisar as opções de rotas
