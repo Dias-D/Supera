@@ -22,6 +22,7 @@ Route::post('/register', [AuthController::class, 'register']);
 
 Route::middleware('auth:sanctum')->group(function () {
     Route::get('/me', [AuthController::class, 'getMe']);
+    Route::post('/logout', [AuthController::class, 'logout']);
     Route::resources([
         '/cars' => CarController::class,
         '/maintenances' => MaintenanceController::class

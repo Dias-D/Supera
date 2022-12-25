@@ -6,4 +6,11 @@ export default (httpClient) => ({
       data: response.data,
     };
   },
+  logout: async () => {
+    const response = await httpClient.get("/logout");
+
+    return {
+      data: response.data,
+    };
+  },
 });

@@ -362,13 +362,13 @@
 							}
 						],
 						"url": {
-							"raw": "{{host}}/cars/591c955d-141a-4bf4-ac59-bc40f7151d66",
+							"raw": "{{host}}/cars/de5ef354-71a1-4d1c-aafe-eb0479fa4a64",
 							"host": [
 								"{{host}}"
 							],
 							"path": [
 								"cars",
-								"591c955d-141a-4bf4-ac59-bc40f7151d66"
+								"de5ef354-71a1-4d1c-aafe-eb0479fa4a64"
 							]
 						}
 					},
@@ -465,13 +465,13 @@
 							}
 						],
 						"url": {
-							"raw": "{{host}}/cars/871d9ad3-6b1d-44de-8e1d-9dd51c1259c9",
+							"raw": "{{host}}/cars/de5ef354-71a1-4d1c-aafe-eb0479fa4a64",
 							"host": [
 								"{{host}}"
 							],
 							"path": [
 								"cars",
-								"871d9ad3-6b1d-44de-8e1d-9dd51c1259c9"
+								"de5ef354-71a1-4d1c-aafe-eb0479fa4a64"
 							]
 						}
 					},
@@ -572,7 +572,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"car_id\": \"18458681-db5a-4f03-b3a8-cde69ba29ed2\"\r\n}",
+							"raw": "{\r\n    \"car_id\": \"a3f75e32-976e-4e14-a1f2-2d09d46a7a56\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -640,13 +640,13 @@
 							}
 						],
 						"url": {
-							"raw": "{{host}}/maintenances/871d9ad3-6b1d-44de-8e1d-9dd51c1259c9",
+							"raw": "{{host}}/maintenances/4ba89418-1ae6-4999-80a1-a99f760bc6d1",
 							"host": [
 								"{{host}}"
 							],
 							"path": [
 								"maintenances",
-								"871d9ad3-6b1d-44de-8e1d-9dd51c1259c9"
+								"4ba89418-1ae6-4999-80a1-a99f760bc6d1"
 							]
 						}
 					},
@@ -988,6 +988,60 @@
 					"body": "{\n \"success\": false,\n \"message\": \"Ops! Some errors occurred\",\n \"errors\": {\n  \"email\": [\n   \"The email has already been taken.\"\n  ]\n }\n}"
 				}
 			]
+		},
+		{
+			"name": "Logout",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/logout",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"logout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Me",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/me",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"me"
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }

@@ -7,6 +7,7 @@ use App\Http\Requests\LoginRequest;
 use App\Http\Requests\RegisterRequest;
 use App\Http\Resources\UserResource;
 use App\Http\Services\UserServices;
+use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Illuminate\Support\Facades\Auth;
 
@@ -54,6 +55,19 @@ class AuthController extends Controller
                 'success' => false,
                 'message'   => $e->getMessage()
             ], Response::HTTP_INTERNAL_SERVER_ERROR);
+        }
+    }
+
+    public function logout(Request $request)
+    {
+        if (Auth::check()) {
+            Auth::user()->tokens()->delete();
+
+            return response()->json([
+                'success'   => true,
+                'data'      => [],
+                'message'   => 'Logout in successfully',
+            ], Response::HTTP_OK);
         }
     }
 

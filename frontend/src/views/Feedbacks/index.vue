@@ -1,11 +1,15 @@
 <template>
-    <h1>Feedbacks</h1>
+  <maintenance-header />
+  <maintenance />
 </template>
 
 <script>
-export default {};
+import MaintenanceHeader from "./MaintenanceHeader.vue";
+import Maintenance from "./Maintenance.vue";
+
+export default {
+  components: { Maintenance, MaintenanceHeader },
+};
 </script>
 
-<style>
-
-</style>
+<style></style>

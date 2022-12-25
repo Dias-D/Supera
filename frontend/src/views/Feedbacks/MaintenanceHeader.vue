@@ -5,31 +5,13 @@
         <div class="w-28 lg:w-36">
           <h1 class="font-bold text-white">Maintenance's Car</h1>
         </div>
-        <div class="flex">
-          <button
-            @click="() => emit('create-account')"
-            class="px-6 py-2 font-bold rounded-full text-white focus:outline"
-          >
-            Registrar-se
-          </button>
-          <button
-            @click="() => emit('login')"
-            class="px-6 py-2 font-bold bg-white rounded-full text-black focus:outline"
-          >
-            Entrar
-          </button>
-        </div>
       </div>
     </div>
   </header>
 </template>
 
 <script>
-export default {
-  setup({}, { emit }) {
-    return { emit };
-  },
-};
+export default {};
 </script>
 
 <style lang="postcss" scoped>

@@ -39,6 +39,7 @@ httpClient.interceptors.response.use(
     }
 
     if (error.response.status === 401) {
+      window.localStorage.removeItem("token");
       router.push({ name: "Home" });
     }
 
