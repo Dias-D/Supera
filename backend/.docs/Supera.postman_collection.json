@@ -1,0 +1,993 @@
+{
+	"info": {
+		"_postman_id": "1c8f43e4-343d-480f-bd48-a9ffdede0aca",
+		"name": "Supera",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14009175"
+	},
+	"item": [
+		{
+			"name": "Cars",
+			"item": [
+				{
+					"name": "Store",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer 5|cvvFkv3R38SD0BJmoM4rBYhDPMk2eoMdSKdGDDtv"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"name\": \"Buffalo\",\r\n\t\"brand\": \"Lamborguini\",\r\n\t\"model\": \"Sport\",\r\n\t\"version\": 1\r\n}"
+						},
+						"url": {
+							"raw": "{{host}}/cars",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"cars"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "created / 201",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer 5|cvvFkv3R38SD0BJmoM4rBYhDPMk2eoMdSKdGDDtv"
+									}
+								],
+								"url": {
+									"raw": "{{baseURL1}}/api/cars",
+									"host": [
+										"{{baseURL1}}"
+									],
+									"path": [
+										"api",
+										"cars"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 23 Dec 2022 22:09:33 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.13"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 23 Dec 2022 22:09:33 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "58"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"success\": true,\n \"car\": {\n  \"id\": \"0\",\n  \"user_id\": \"66edb84c-597d-4ef5-be8b-9dd8bc9d6cac\",\n  \"brand\": \"Ferrari\",\n  \"model\": \"Sport\",\n  \"version\": 1\n },\n \"message\": \"User Created In Successfully!\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Update",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer 5|cvvFkv3R38SD0BJmoM4rBYhDPMk2eoMdSKdGDDtv"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"name\": \"F-1350\",\r\n\t\"version\": 90\r\n}"
+						},
+						"url": {
+							"raw": "{{host}}/cars/f31eb729-52be-46da-80fe-f304eb22e37d",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"cars",
+								"f31eb729-52be-46da-80fe-f304eb22e37d"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "created / 201",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer 5|cvvFkv3R38SD0BJmoM4rBYhDPMk2eoMdSKdGDDtv"
+									}
+								],
+								"url": {
+									"raw": "{{baseURL1}}/api/cars/f31eb729-52be-46da-80fe-f304eb22e37d",
+									"host": [
+										"{{baseURL1}}"
+									],
+									"path": [
+										"api",
+										"cars",
+										"f31eb729-52be-46da-80fe-f304eb22e37d"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 23 Dec 2022 22:39:44 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.13"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 23 Dec 2022 22:39:44 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"success\": true,\n \"car\": {\n  \"id\": \"f31eb729-52be-46da-80fe-f304eb22e37d\",\n  \"user_id\": \"66edb84c-597d-4ef5-be8b-9dd8bc9d6cac\",\n  \"name\": \"F-1350\",\n  \"brand\": \"Ferrari\",\n  \"model\": \"HyperSport\",\n  \"version\": 90\n },\n \"message\": \"Car Updated In Successfully!\"\n}"
+						}
+					]
+				},
+				{
+					"name": "All",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer 5|cvvFkv3R38SD0BJmoM4rBYhDPMk2eoMdSKdGDDtv"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/cars",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"cars"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "successfully / 200",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer 5|cvvFkv3R38SD0BJmoM4rBYhDPMk2eoMdSKdGDDtv"
+									}
+								],
+								"url": {
+									"raw": "{{baseURL1}}/api/cars",
+									"host": [
+										"{{baseURL1}}"
+									],
+									"path": [
+										"api",
+										"cars"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 23 Dec 2022 22:10:25 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.13"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 23 Dec 2022 22:10:25 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"success\": true,\n \"cars\": [\n  {\n   \"id\": \"f31eb729-52be-46da-80fe-f304eb22e37d\",\n   \"user_id\": \"66edb84c-597d-4ef5-be8b-9dd8bc9d6cac\",\n   \"brand\": \"Ferrari\",\n   \"model\": \"Sport\",\n   \"version\": 1\n  }\n ],\n \"message\": \"All cars by this user\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Show",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer 5|cvvFkv3R38SD0BJmoM4rBYhDPMk2eoMdSKdGDDtv"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/cars/591c955d-141a-4bf4-ac59-bc40f7151d66",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"cars",
+								"591c955d-141a-4bf4-ac59-bc40f7151d66"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "successfully / 200",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer 5|cvvFkv3R38SD0BJmoM4rBYhDPMk2eoMdSKdGDDtv"
+									}
+								],
+								"url": {
+									"raw": "{{baseURL1}}/api/cars",
+									"host": [
+										"{{baseURL1}}"
+									],
+									"path": [
+										"api",
+										"cars"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 23 Dec 2022 22:10:25 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.13"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 23 Dec 2022 22:10:25 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"success\": true,\n \"cars\": [\n  {\n   \"id\": \"f31eb729-52be-46da-80fe-f304eb22e37d\",\n   \"user_id\": \"66edb84c-597d-4ef5-be8b-9dd8bc9d6cac\",\n   \"brand\": \"Ferrari\",\n   \"model\": \"Sport\",\n   \"version\": 1\n  }\n ],\n \"message\": \"All cars by this user\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer 5|cvvFkv3R38SD0BJmoM4rBYhDPMk2eoMdSKdGDDtv"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/cars/871d9ad3-6b1d-44de-8e1d-9dd51c1259c9",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"cars",
+								"871d9ad3-6b1d-44de-8e1d-9dd51c1259c9"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "successfully / 200",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer 5|cvvFkv3R38SD0BJmoM4rBYhDPMk2eoMdSKdGDDtv"
+									}
+								],
+								"url": {
+									"raw": "{{baseURL1}}/api/cars",
+									"host": [
+										"{{baseURL1}}"
+									],
+									"path": [
+										"api",
+										"cars"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 23 Dec 2022 22:10:25 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.13"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 23 Dec 2022 22:10:25 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"success\": true,\n \"cars\": [\n  {\n   \"id\": \"f31eb729-52be-46da-80fe-f304eb22e37d\",\n   \"user_id\": \"66edb84c-597d-4ef5-be8b-9dd8bc9d6cac\",\n   \"brand\": \"Ferrari\",\n   \"model\": \"Sport\",\n   \"version\": 1\n  }\n ],\n \"message\": \"All cars by this user\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Maintenance",
+			"item": [
+				{
+					"name": "All",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"car_id\": \"18458681-db5a-4f03-b3a8-cde69ba29ed2\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/maintenances",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"maintenances"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Show",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/maintenances/4ba89418-1ae6-4999-80a1-a99f760bc6d1",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"maintenances",
+								"4ba89418-1ae6-4999-80a1-a99f760bc6d1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer 5|cvvFkv3R38SD0BJmoM4rBYhDPMk2eoMdSKdGDDtv"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/maintenances/871d9ad3-6b1d-44de-8e1d-9dd51c1259c9",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"maintenances",
+								"871d9ad3-6b1d-44de-8e1d-9dd51c1259c9"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "successfully / 200",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer 5|cvvFkv3R38SD0BJmoM4rBYhDPMk2eoMdSKdGDDtv"
+									}
+								],
+								"url": {
+									"raw": "{{baseURL1}}/api/cars",
+									"host": [
+										"{{baseURL1}}"
+									],
+									"path": [
+										"api",
+										"cars"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 23 Dec 2022 22:10:25 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.13"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 23 Dec 2022 22:10:25 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"success\": true,\n \"cars\": [\n  {\n   \"id\": \"f31eb729-52be-46da-80fe-f304eb22e37d\",\n   \"user_id\": \"66edb84c-597d-4ef5-be8b-9dd8bc9d6cac\",\n   \"brand\": \"Ferrari\",\n   \"model\": \"Sport\",\n   \"version\": 1\n  }\n ],\n \"message\": \"All cars by this user\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Create",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"car_id\": \"a3f75e32-976e-4e14-a1f2-2d09d46a7a56\",\r\n    \"type\": \"Freios\",\r\n    \"description\": \"Sem freios\",\r\n    \"start_date\": \"2022-12-21\",\r\n    \"end_date\": \"2022-12-29\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/maintenances",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"maintenances"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"description\": \"Pastilha e discos de freios\",\r\n    \"end_date\": \"2022-12-31\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/maintenances/4ba89418-1ae6-4999-80a1-a99f760bc6d1",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"maintenances",
+								"4ba89418-1ae6-4999-80a1-a99f760bc6d1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"email\": \"admin@laravel.io\",\r\n\t\"password\": \"password\"\r\n}"
+				},
+				"url": {
+					"raw": "{{host}}/login",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "successfully / 200",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseURL1}}/api/login",
+							"host": [
+								"{{baseURL1}}"
+							],
+							"path": [
+								"api",
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 23 Dec 2022 21:59:52 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.1.13"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 23 Dec 2022 21:59:52 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "58"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n \"success\": true,\n \"token\": \"5|cvvFkv3R38SD0BJmoM4rBYhDPMk2eoMdSKdGDDtv\",\n \"user\": {\n  \"id\": \"66edb84c-597d-4ef5-be8b-9dd8bc9d6cac\",\n  \"name\": \"Diego Dias\",\n  \"email\": \"diego@laravel.io\"\n },\n \"message\": \"User Logged In Successfully!\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"name\": \"Diego Dias\",\r\n\t\"email\": \"diego@laravel.io\",\r\n\t\"password\": \"password\"\r\n}"
+				},
+				"url": {
+					"raw": "{{host}}/register",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"register"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": " / 400",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseURL1}}/api/register",
+							"host": [
+								"{{baseURL1}}"
+							],
+							"path": [
+								"api",
+								"register"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 23 Dec 2022 21:59:32 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.1.13"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 23 Dec 2022 21:59:32 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n \"success\": false,\n \"message\": \"Ops! Some errors occurred\",\n \"errors\": {\n  \"email\": [\n   \"The email has already been taken.\"\n  ]\n }\n}"
+				}
+			]
+		}
+	]
+}
